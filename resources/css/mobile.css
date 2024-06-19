@@ -1,9 +1,12 @@
+header {
+  padding: 2rem;
+}
 @media screen and (max-width: 767px) {
   header {
-    height: 80vh;
+    height: 70vh !important;
   }
   header .banner-content .title-banner {
-    font-size: 75px !important;
+    font-size: 60px !important;
   }
   header .menu, header .icons {
     display: none !important;
@@ -28,17 +31,12 @@
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 767px) {
-  header .title-banner {
-    font-size: 58px;
-  }
-}
 header .off-screen-menu {
   background-color: rgb(34, 37, 49);
   height: 100vh;
   width: 100%;
   max-width: 245px;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: -450px;
   display: -webkit-box;
@@ -58,6 +56,12 @@ header .off-screen-menu {
   font-size: 3rem;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  z-index: 20;
+}
+@media screen and (max-width: 767px) {
+  header .off-screen-menu {
+    height: 70vh;
+  }
 }
 header .off-screen-menu a {
   color: #fff;
@@ -74,6 +78,7 @@ header .ham-menu {
   margin-left: auto;
   position: relative;
   display: none;
+  z-index: 30;
 }
 @media screen and (max-width: 767px) {
   header .ham-menu {
@@ -114,4 +119,24 @@ header .ham-menu.active span:nth-child(3) {
   top: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.swiper-pagination {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .swiper-pagination {
+    display: block;
+    bottom: -5px !important;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 21px;
+    height: 10px;
+    border-radius: 25%;
+    border-color: #2c2c2c;
+    background: #42B073;
+  }
+  .swiper-pagination .swiper-pagination-bullet .swiper-pagination-bullets-active {
+    background: #42B073 !important;
+  }
 }

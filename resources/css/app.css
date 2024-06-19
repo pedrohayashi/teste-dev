@@ -5,6 +5,7 @@ body header {
   background-repeat: no-repeat;
   height: 100vh;
   padding-top: 5rem;
+  position: relative;
 }
 body header .topo {
   display: -webkit-box;
@@ -187,8 +188,10 @@ body .news-section .news .go-to {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
 }
-body .news-section .swiper-pagination-bullets-active {
-  color: #24BEFF;
+@media screen and (max-width: 767px) {
+  body .news-section .news .go-to {
+    padding-bottom: 25px;
+  }
 }
 body .event {
   padding-bottom: 2rem;
@@ -198,6 +201,7 @@ body .event .event-section {
   height: 335px;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 body .event .event-card {
   position: relative;
@@ -254,4 +258,28 @@ body .event .event-section .swiper-wrapper .swiper-slide:nth-child(4) {
 }
 body .event .event-section .swiper-wrapper .swiper-slide:nth-child(5) {
   border-top: 8px solid #FFD400;
+}
+
+.whats-flutuante {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 15rem;
+  right: 17rem;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 15;
+}
+@media screen and (max-width: 767px) {
+  .whats-flutuante {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.whats {
+  margin-top: 16px;
 }

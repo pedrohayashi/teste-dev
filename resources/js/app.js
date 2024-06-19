@@ -2,6 +2,10 @@ const swiper = new Swiper('.swiper', {
     // Default parameters
     slidesPerView: 1,
     spaceBetween: 50,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
@@ -25,6 +29,10 @@ const swiper = new Swiper('.swiper', {
   const swiper2 = new Swiper('.swiper-event', {
     // Default parameters
     slidesPerView: 1,
+
+    pagination: {
+        el: '.swiper-pagination',
+      },
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
