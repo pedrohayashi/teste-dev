@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/resources/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/mobile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/de03f1db2d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <title>Teste Dev</title>
 </head>
@@ -15,27 +21,61 @@
     <div class="">
         <header>
             <nav>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="icon">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="topo">
+                                <div class="icon">
+                                    <svg width="100" height="17" viewBox="0 0 100 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.68 13.4824C39.1108 13.4824 36.9497 11.4774 36.9497 8.5C36.9497 5.52257 39.1108 3.51761 41.68 3.51761C44.2493 3.51761 46.4423 5.55459 46.4423 8.5C46.4423 11.4454 44.2813 13.4824 41.68 13.4824ZM41.68 0.135986C36.8217 0.135986 32.9398 3.61366 32.9398 8.5C32.9398 13.3863 36.8257 16.864 41.68 16.864C46.5343 16.864 50.4522 13.4184 50.4522 8.5C50.4522 3.58164 46.5664 0.135986 41.68 0.135986Z" fill="white"/>
+                                        <path d="M60.8972 13.4824C58.328 13.4824 56.167 11.4774 56.167 8.5C56.167 5.52257 58.328 3.51761 60.8972 3.51761C63.4665 3.51761 65.6595 5.55459 65.6595 8.5C65.6595 11.4454 63.4985 13.4824 60.8972 13.4824ZM60.8972 0.135986C56.0389 0.135986 52.157 3.61366 52.157 8.5C52.157 13.3863 56.0429 16.864 60.8972 16.864C65.7516 16.864 69.6694 13.4184 69.6694 8.5C69.6694 3.58164 65.7836 0.135986 60.8972 0.135986Z" fill="white"/>
+                                        <path d="M97.6989 12.0737C96.4263 12.0737 95.3978 13.1062 95.3978 14.3748C95.3978 15.6434 96.4263 16.6759 97.6989 16.6759C98.9715 16.6759 100 15.6474 100 14.3748C100 13.1022 98.9715 12.0737 97.6989 12.0737Z" fill="#38D430"/>
+                                        <path d="M10.9493 6.49904H4.40612C4.30207 6.49904 4.22203 6.36698 4.24604 6.26293C4.73427 4.37802 6.14695 3.22147 8.1159 3.22147C9.69666 3.22147 10.9813 4.48207 11.1133 6.29894C11.1213 6.39099 11.0413 6.49904 10.9493 6.49904ZM8.1159 0.135986C3.32159 0.135986 0 3.58164 0 8.5C0 13.0422 3.28958 16.864 8.58412 16.864C11.3254 16.864 13.3384 15.7195 14.3229 15.0071C14.7231 14.715 14.8311 14.1667 14.579 13.7425L13.8947 12.602C13.6145 12.1377 13.0102 11.9977 12.558 12.2938C11.7656 12.8141 10.441 13.4824 8.86826 13.4824C6.51513 13.4824 4.49416 11.9937 4.10197 9.31239C4.08996 9.21634 4.166 9.01225 4.26205 9.01225H13.8867C14.615 9.01225 15.2113 8.53202 15.1993 7.79966C15.1993 7.73563 15.1993 7.73163 15.1993 7.6716C15.1953 3.44557 12.6901 0.135986 8.1159 0.135986Z" fill="white"/>
+                                        <path d="M30.5747 11.2976H28.2936C27.9254 11.2976 27.8774 11.7258 27.8774 12.09V12.1941C27.8774 12.6623 27.4772 12.8944 27.041 12.8944H23.2512C22.839 12.8944 22.6068 12.4102 22.863 12.086C23.011 11.9019 23.1831 11.6818 23.3752 11.4457L30.1305 3.06968C30.4586 2.66949 30.5346 2.19727 30.5346 1.68102C30.5346 0.924655 29.9184 0.328369 29.162 0.328369H19.0211C17.5164 0.328369 16.9121 0.948667 16.9121 2.42137V4.66645C16.9121 5.05464 17.0442 5.35878 17.4324 5.35878H19.7935C20.1056 5.35878 20.3378 5.11467 20.3378 4.80252V4.52638C20.3378 4.05416 20.7419 3.75802 21.2142 3.75802H24.4957C24.7919 3.75802 25.2041 4.03415 24.6798 4.61042C24.4557 4.85854 17.2483 13.6988 17.2483 13.6988C17.0042 13.9989 16.9121 14.3511 16.9121 14.7393V14.7553C16.9121 15.5917 17.4043 16.324 18.2447 16.324H29.238C30.7107 16.324 31.311 15.6397 31.311 14.139V12.11C31.311 11.7298 30.9589 11.2976 30.5787 11.2976" fill="white"/>
+                                        <path d="M85.8932 0.135986C84.2605 0.135986 82.7437 0.772292 81.6112 1.79678C80.5307 0.764288 79.198 0.135986 77.5492 0.135986C74.1276 0.135986 71.3743 2.92132 71.3743 6.22291V15.4113C71.3743 16.0436 71.8865 16.5559 72.5188 16.5559H73.8915C74.5198 16.5559 75.032 16.0396 75.032 15.4113V6.22291C75.032 5.06635 76.2926 4.01385 77.5692 4.01385C78.8459 4.01385 79.8343 4.9623 79.8343 6.17088V15.5114C79.8343 16.1437 80.3466 16.6559 80.9749 16.6559H82.3475C82.9758 16.6559 83.4881 16.1437 83.4881 15.5114V6.22291C83.4881 5.06635 84.7487 4.01385 86.0213 4.01385C87.2939 4.01385 88.2864 4.9623 88.2864 6.17088V15.4113C88.2864 16.0436 88.7986 16.5559 89.4269 16.5559H90.7996C91.4279 16.5559 91.9401 16.0396 91.9401 15.4113V6.17088C91.9401 2.78526 89.2829 0.135986 85.8972 0.135986" fill="white"/>
+                                        </svg>
+                                </div>
+                                <div class="content-menu">
+                                    <nav class="menu">
+                                        <a href="">MENU1</a>
+                                        <a href="">MENU2</a>
+                                        <a href="">MENU3</a>
+                                    </nav>
+                                    <div class="icons">
+                                        <a class="search" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                                        <a href=""><i class="fa-solid fa-microphone"></i></a>
+                                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
+
+                                    <div class="off-screen-menu">
+                                        <a href="">MENU1</a>
+                                        <a href="">MENU2</a>
+                                        <a href="">MENU3</a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                                        <a href=""><i class="fa-solid fa-microphone"></i></a>
+                                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="ham-menu" onclick="toggleMenu()">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="menu">
-                            <ul>
-                                <li><a href="">MENU1</a></li>
-                                <li><a href="">MENU2</a></li>
-                                <li><a href="">MENU3</a></li>
-                            </ul>
-                            <ul class="icons">
-                                <li class="search"><a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
-                                <li><a href=""></a><i class="fa-brands fa-facebook"></i></li>
-                                <li><a href=""></a><i class="fa-brands fa-instagram"></i></li>
-                                <li><a href=""></a><i class="fa-brands fa-youtube"></i></li>
-                                <li><a href=""></a><i class="fa-brands fa-tiktok"></i></li>
-                                <li><a href=""></a><i class="fa-solid fa-microphone"></i></li>
-                                <li><a href=""></a><i class="fa-brands fa-linkedin"></i></li>
-                            </ul>
+                        <div class="col-md-6">
+                            <div class="banner-content">
+                                <h2 class="title-banner">Novas <span>modalidades</span> e ampliação de <span>horarios.</span></h2>
+                                <p>Aulas de 45 minutos e período de teste gratuito.</p>
+                                <button class="btn">SAIBA MAIS</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -44,92 +84,537 @@
     </div>
     <section class="event">
         <div class="event-section">
-            <div class="event-card" style="background-image: url('/resources/images/event1.jpeg');">
-                <div class="event-content">
-                    <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
-                    <span>10 de Abril 2023</span>
+            <div class="swiper-event">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                     <div class="swiper-slide">
+                         <div class="event-card" style="background-image: url('/resources/images/event1.jpeg');">
+                             <div class="event-content">
+                                 <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
+                                 <span>10 de Abril 2023</span>
+                             </div>
+                             <a href="" class="event-link"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.03 10.0383H0.869498C0.638893 10.0383 0.417733 9.94516 0.25467 9.77928C0.0916077 9.61341 0 9.38843 0 9.15385C0 8.91926 0.0916077 8.69428 0.25467 8.52841C0.417733 8.36253 0.638893 8.26934 0.869498 8.26934H17.03L10.6879 1.81954C10.5246 1.65346 10.4329 1.42819 10.4329 1.19331C10.4329 0.958431 10.5246 0.73317 10.6879 0.567083C10.8511 0.400997 11.0726 0.307692 11.3035 0.307692C11.5344 0.307692 11.7558 0.400997 11.9191 0.567083L19.7446 8.52762C19.8255 8.60978 19.8898 8.70739 19.9336 8.81485C19.9774 8.9223 20 9.0375 20 9.15385C20 9.27019 19.9774 9.38539 19.9336 9.49285C19.8898 9.60031 19.8255 9.69791 19.7446 9.78008L11.9191 17.7406C11.7558 17.9067 11.5344 18 11.3035 18C11.0726 18 10.8511 17.9067 10.6879 17.7406C10.5246 17.5745 10.4329 17.3493 10.4329 17.1144C10.4329 16.8795 10.5246 16.6542 10.6879 16.4882L17.03 10.0383Z" fill="white"/>
+                                </svg>
+                                </a>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="event-card" style="background-image: url('/resources/images/event2.jpeg');">
+                             <div class="event-content">
+                                 <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
+                                 <span>10 de Abril 2023</span>
+                             </div>
+                             <a href="#" class="event-link"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.03 10.0383H0.869498C0.638893 10.0383 0.417733 9.94516 0.25467 9.77928C0.0916077 9.61341 0 9.38843 0 9.15385C0 8.91926 0.0916077 8.69428 0.25467 8.52841C0.417733 8.36253 0.638893 8.26934 0.869498 8.26934H17.03L10.6879 1.81954C10.5246 1.65346 10.4329 1.42819 10.4329 1.19331C10.4329 0.958431 10.5246 0.73317 10.6879 0.567083C10.8511 0.400997 11.0726 0.307692 11.3035 0.307692C11.5344 0.307692 11.7558 0.400997 11.9191 0.567083L19.7446 8.52762C19.8255 8.60978 19.8898 8.70739 19.9336 8.81485C19.9774 8.9223 20 9.0375 20 9.15385C20 9.27019 19.9774 9.38539 19.9336 9.49285C19.8898 9.60031 19.8255 9.69791 19.7446 9.78008L11.9191 17.7406C11.7558 17.9067 11.5344 18 11.3035 18C11.0726 18 10.8511 17.9067 10.6879 17.7406C10.5246 17.5745 10.4329 17.3493 10.4329 17.1144C10.4329 16.8795 10.5246 16.6542 10.6879 16.4882L17.03 10.0383Z" fill="white"/>
+                                </svg>
+                                </a>
+                         </div>
+                     </div>
+                    <div class="swiper-slide">
+                        <div class="event-card" style="background-image: url('/resources/images/img1.jpeg');">
+                            <div class="event-content">
+                                <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
+                                <span>10 de Abril 2023</span>
+                            </div>
+                            <a href="" class="event-link"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.03 10.0383H0.869498C0.638893 10.0383 0.417733 9.94516 0.25467 9.77928C0.0916077 9.61341 0 9.38843 0 9.15385C0 8.91926 0.0916077 8.69428 0.25467 8.52841C0.417733 8.36253 0.638893 8.26934 0.869498 8.26934H17.03L10.6879 1.81954C10.5246 1.65346 10.4329 1.42819 10.4329 1.19331C10.4329 0.958431 10.5246 0.73317 10.6879 0.567083C10.8511 0.400997 11.0726 0.307692 11.3035 0.307692C11.5344 0.307692 11.7558 0.400997 11.9191 0.567083L19.7446 8.52762C19.8255 8.60978 19.8898 8.70739 19.9336 8.81485C19.9774 8.9223 20 9.0375 20 9.15385C20 9.27019 19.9774 9.38539 19.9336 9.49285C19.8898 9.60031 19.8255 9.69791 19.7446 9.78008L11.9191 17.7406C11.7558 17.9067 11.5344 18 11.3035 18C11.0726 18 10.8511 17.9067 10.6879 17.7406C10.5246 17.5745 10.4329 17.3493 10.4329 17.1144C10.4329 16.8795 10.5246 16.6542 10.6879 16.4882L17.03 10.0383Z" fill="white"/>
+                                </svg>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="event-card" style="background-image: url('/resources/images/event4.jpeg');">
+                            <div class="event-content">
+                                <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
+                                <span>10 de Abril 2023</span>
+                            </div>
+                            <a href="#" class="event-link"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.03 10.0383H0.869498C0.638893 10.0383 0.417733 9.94516 0.25467 9.77928C0.0916077 9.61341 0 9.38843 0 9.15385C0 8.91926 0.0916077 8.69428 0.25467 8.52841C0.417733 8.36253 0.638893 8.26934 0.869498 8.26934H17.03L10.6879 1.81954C10.5246 1.65346 10.4329 1.42819 10.4329 1.19331C10.4329 0.958431 10.5246 0.73317 10.6879 0.567083C10.8511 0.400997 11.0726 0.307692 11.3035 0.307692C11.5344 0.307692 11.7558 0.400997 11.9191 0.567083L19.7446 8.52762C19.8255 8.60978 19.8898 8.70739 19.9336 8.81485C19.9774 8.9223 20 9.0375 20 9.15385C20 9.27019 19.9774 9.38539 19.9336 9.49285C19.8898 9.60031 19.8255 9.69791 19.7446 9.78008L11.9191 17.7406C11.7558 17.9067 11.5344 18 11.3035 18C11.0726 18 10.8511 17.9067 10.6879 17.7406C10.5246 17.5745 10.4329 17.3493 10.4329 17.1144C10.4329 16.8795 10.5246 16.6542 10.6879 16.4882L17.03 10.0383Z" fill="white"/>
+                                </svg>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="event-card" style="background-image: url('/resources/images/event5.jpeg');">
+                            <div class="event-content">
+                                <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
+                                <span>10 de Abril 2023</span>
+                            </div>
+                            <a href="#" class="event-link"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.03 10.0383H0.869498C0.638893 10.0383 0.417733 9.94516 0.25467 9.77928C0.0916077 9.61341 0 9.38843 0 9.15385C0 8.91926 0.0916077 8.69428 0.25467 8.52841C0.417733 8.36253 0.638893 8.26934 0.869498 8.26934H17.03L10.6879 1.81954C10.5246 1.65346 10.4329 1.42819 10.4329 1.19331C10.4329 0.958431 10.5246 0.73317 10.6879 0.567083C10.8511 0.400997 11.0726 0.307692 11.3035 0.307692C11.5344 0.307692 11.7558 0.400997 11.9191 0.567083L19.7446 8.52762C19.8255 8.60978 19.8898 8.70739 19.9336 8.81485C19.9774 8.9223 20 9.0375 20 9.15385C20 9.27019 19.9774 9.38539 19.9336 9.49285C19.8898 9.60031 19.8255 9.69791 19.7446 9.78008L11.9191 17.7406C11.7558 17.9067 11.5344 18 11.3035 18C11.0726 18 10.8511 17.9067 10.6879 17.7406C10.5246 17.5745 10.4329 17.3493 10.4329 17.1144C10.4329 16.8795 10.5246 16.6542 10.6879 16.4882L17.03 10.0383Z" fill="white"/>
+                                </svg>
+                                </a>
+                        </div>
+                    </div>
                 </div>
-                <a href="#" class="event-link">→</a>
             </div>
-            <div class="event-card" style="background-image: url('/resources/images/event2.jpeg');">
-                <div class="event-content">
-                    <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
-                    <span>10 de Abril 2023</span>
-                </div>
-                <a href="#" class="event-link">→</a>
-            </div>
-            <div class="event-card" style="background-image: url('/resources/images/img1.jpeg');">
-                <div class="event-content">
-                    <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
-                    <span>10 de Abril 2023</span>
-                </div>
-                <a href="#" class="event-link"><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <div class="event-card" style="background-image: url('/resources/images/event4.jpeg');">
-                <div class="event-content">
-                    <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
-                    <span>10 de Abril 2023</span>
-                </div>
-                <a href="#" class="event-link">→</a>
-            </div>
-            <div class="event-card" style="background-image: url('/resources/images/event5.jpeg');">
-                <div class="event-content">
-                    <p>Lorem Ipsum dolor Sit Amet<br>Dolor lorem ipsum</p>
-                    <span>10 de Abril 2023</span>
-                </div>
-                <a href="#" class="event-link">→</a>
-            </div>
+        </div>
     </section>
     <section class="news-section">
-       <div class="container">
             <div class="content">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="box-title">
                             <h2 class="title">ESPORTES</h2>
-                            <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum.</p>
+                            <p>Lorem Ipsum dolor Sit Amet</p>
                             <button class="btn">VER TODOS</button>
                         </div>
                     </div>
-                    <div class="container-news col-md-9">
-                        <div class="news col-md-4">
-                            <div class="box-news">
-                                <img src="/resources/images/img1.jpeg" alt="">
-                                <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                    <div class="container-news col-md-7 offset-md-1">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="go-to">
-                                <span>10 de Abril 2023</span>
-                                <p>-></p>
-                            </div>
-                        </div>
-                        <div class="news col-md-4">
-                            <div class="box-news">
-                                <img src="/resources/images/img1.jpeg" alt="">
-                                <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
-                            </div>
-                            <div class="go-to">
-                                <span>10 de Abril 2023</span>
-                                <p>-></p>
-                            </div>
-                        </div>
-                        <div class="news col-md-4">
-                            <div class="box-news">
-                                <img src="/resources/images/img1.jpeg" alt="">
-                                <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
-                            </div>
-                            <div class="go-to">
-                                <span>10 de Abril 2023</span>
-                                <p>-></p>
-                            </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
-       </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-title">
+                            <h2 class="title">EVENTOS</h2>
+                            <p>Lorem Ipsum dolor Sit Amet</p>
+                            <button class="btn">VER TODOS</button>
+                        </div>
+                    </div>
+                    <div class="container-news col-md-7 offset-md-1">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-title">
+                            <h2 class="title">SERVIÇOS</h2>
+                            <p>Lorem Ipsum dolor Sit Amet</p>
+                            <button class="btn">VER TODOS</button>
+                        </div>
+                    </div>
+                    <div class="container-news col-md-7 offset-md-1">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-title">
+                            <h2 class="title">PROJETOS</h2>
+                            <p>Lorem Ipsum dolor Sit Amet</p>
+                            <button class="btn">VER TODOS</button>
+                        </div>
+                    </div>
+                    <div class="container-news col-md-7 offset-md-1">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-title">
+                            <h2 class="title">NEGÓCIOS</h2>
+                            <p>Lorem Ipsum dolor Sit Amet</p>
+                            <button class="btn">VER TODOS</button>
+                        </div>
+                    </div>
+                    <div class="container-news col-md-7 offset-md-1">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                                <div class="news swiper-slide">
+                                    <div class="box-news">
+                                        <img src="/resources/images/img1.jpeg" alt="">
+                                        <p>Lorem Ipsum dolor Sit Amet Dolor lorem ipsum</p>
+                                    </div>
+                                    <div class="go-to">
+                                        <span>10 de Abril 2023</span>
+                                        <p>-></p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.ham-menu');
+            const socialIcons = document.querySelector('.off-screen-menu');
+            menu.classList.toggle('active');
+            socialIcons.classList.toggle('active');
+        }
+    </script>
+
+    <script src="/resources/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/index.js"></script>
-    <script src="/js/accordion.js"></script>
+
 </body>
 </html>
