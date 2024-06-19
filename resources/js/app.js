@@ -20,6 +20,10 @@ const swiper = new Swiper('.swiper', {
       },
       // when window width is >= 640px
       640: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      1180: {
         slidesPerView: 3,
         spaceBetween: 40
       }
@@ -28,7 +32,7 @@ const swiper = new Swiper('.swiper', {
 
   const swiper2 = new Swiper('.swiper-event', {
     // Default parameters
-    slidesPerView: 1,
+    slidesPerView: 5,
 
     pagination: {
         el: '.swiper-pagination',

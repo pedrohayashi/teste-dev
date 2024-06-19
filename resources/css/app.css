@@ -142,11 +142,12 @@ body .news-section .box-title h2 {
   font-style: normal;
   letter-spacing: -10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   body .news-section .box-title h2 {
     text-align: center;
     font-size: 40px;
     letter-spacing: normal;
+    font-size: 60px;
   }
 }
 body .news-section .box-title p {
